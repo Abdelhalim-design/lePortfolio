@@ -105,3 +105,17 @@
 
 </body>
 </html>
+<nav>
+  <ul>
+    <li><a href="index.md">Accueil</a></li>
+    <li><a href="A_propos_de_moi.md">À propos de moi</a></li>
+    <li><a href="referenciel.md">Référentiel des Compétences</a></li>
+    <li>Projets
+      <ul>
+        <li><a href="concevoir_station_pompage.md">Station de pompage</a></li>
+        <li><a href="concevoir_robot_suiveur.md">Robot Suiveur de Ligne</a></li>
+      </ul>
+    </li>
+    <li><a href="contact.md">Contact</a></li>
+  </ul>
+</nav>
