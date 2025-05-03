@@ -1,50 +1,44 @@
-site_name: "Portfolio - Abdelhalim Zouggagh"
+title: Portfolio - Abdelhalim Zouggagh
+description: Portfolio de Abdelhalim Zouggagh en Génie Électrique et Informatique Industrielle
+baseurl: "" # Si tu utilises un sous-dossier pour ton GitHub Pages, renseigne-le ici
+url: "https://<ton-utilisateur>.github.io" # Remplace par ton URL GitHub Pages
+theme: jekyll-theme-material
 
+# Permet de générer automatiquement le menu de navigation
 nav:
-  - Accueil:
-      - A propos de moi: index.md
-      - Sommaire: Somaires.md
-  - Référentiel des Compétences: referenciel.md
-  - 📚 Projet :
-      - 📌 Semestre 1:
-          - 💧 Station de pompage:
-              - Concevoir: concevoir_station_pompage.md
-              - Vérifier: verifier_station_pompage.md
-          - 🤖 Robot Suiveur de Ligne:
-              - Concevoir: concevoir_robot_suiveur.md
-              - Vérifier: verifier_robot_suiveur.md
-      - 🏅 Semestre 2:
-          - 📖 Moteur de drone:
-              - Concevoir: concevoir_moteur_drone.md
-              - Vérifier: verifier_moteur_drone.md
-          - 🎨 Snake:
-              - Concevoir: concevoir_sae_snake.md
-              - Vérifier: verifier_sae_snake.md
-  - Mon experience personnel: 
-      - 📂 Projets et Compétences:
-          - 🏆 Projets en paralle: projet_realiser.md
-          - 🔧 Compétences: competence_aquise.md
-  - 📞 Contact: contact.md
+  - title: "Accueil"
+    url: "index.md"
+  - title: "A propos de moi"
+    url: "A_propos_de_moi.md"
+  - title: "Référentiel des Compétences"
+    url: "referenciel.md"
+  - title: "Projets"
+    children:
+      - title: "Semestre 1"
+        children:
+          - title: "Station de pompage"
+            url: "concevoir_station_pompage.md"
+          - title: "Robot Suiveur de Ligne"
+            url: "concevoir_robot_suiveur.md"
+      - title: "Semestre 2"
+        children:
+          - title: "Moteur de drone"
+            url: "concevoir_moteur_drone.md"
+          - title: "Snake"
+            url: "concevoir_sae_snake.md"
+  - title: "Mon expérience personnel"
+    children:
+      - title: "Projets réalisés"
+        url: "projet_realiser.md"
+      - title: "Compétences acquises"
+        url: "competence_aquise.md"
+  - title: "Contact"
+    url: "contact.md"
 
-theme:
-  name: "material"
-  palette:
-    scheme: white  # Fond sombre stylé / "default" pour fond clair
-    primary: indigo
-    accent: pink
-  font:
-    text: Roboto
-    code: Roboto Mono
-  logo: "images/Logo-IUT-UM-Horizontal-couleur.png"
-  favicon: "images/favicon.ico"
-  features:
-    - navigation.instant  # Chargement rapide des pages
-    - navigation.tracking  # Garde la position dans la navigation
-    - navigation.sections  # Regroupe les menus
-    - navigation.expand  # Ouvre automatiquement le menu latéral
-    - navigation.tabs  # Affiche un menu sous forme d'onglets (optionnel)
-    - navigation.top  # Bouton retour en haut de la page
-    - toc.integrate  # Intègre la table des matières dans le menu latéral
+# Paramètres supplémentaires pour les fonctionnalités de Jekyll
+markdown: kramdown
+permalink: /:title/
+
 
 extra_css:
   - css/extra.css
