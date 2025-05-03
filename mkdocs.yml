@@ -1,6 +1,4 @@
-site_name: "Portfolio"
-
-site_name: "Portfolio"
+site_name: "Portfolio - Abdelhalim Zouggagh"
 
 nav:
   - Accueil:
@@ -26,11 +24,8 @@ nav:
       - 📂 Projets et Compétences:
           - 🏆 Projets en paralle: projet_realiser.md
           - 🔧 Compétences: competence_aquise.md
-                      
   - 📞 Contact: contact.md
 
-
-site_name: "Portfolio - Abdelhalim Zouggagh"
 theme:
   name: "material"
   palette:
@@ -50,11 +45,9 @@ theme:
     - navigation.tabs  # Affiche un menu sous forme d'onglets (optionnel)
     - navigation.top  # Bouton retour en haut de la page
     - toc.integrate  # Intègre la table des matières dans le menu latéral
-    
 
 extra_css:
   - css/extra.css
-  
   
 extra_javascript:
   - https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap
